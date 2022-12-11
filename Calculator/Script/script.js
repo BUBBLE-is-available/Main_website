@@ -1,3 +1,10 @@
+/*
+    This website is from a tutorial from Web Dev Simplified! 
+    Thanks to him, I'm more comfortable with JS!
+    here's the link:
+    https://www.youtube.com/watch?v=j59qQ7YWLxw
+*/
+
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement) {
         this.previousOperandTextElement = previousOperandTextElement;
