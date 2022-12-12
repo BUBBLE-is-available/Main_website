@@ -111,6 +111,17 @@ header {
   border-top: none;
   border-radius: 0 0 16px 16px;
 }
+header nav {
+  height: 100%;
+}
+header nav ul {
+  height: 100%;
+  padding: 32px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
 
 footer {
   height: 140px;
