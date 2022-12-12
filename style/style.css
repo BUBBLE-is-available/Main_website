@@ -122,6 +122,9 @@ header nav ul {
   align-items: center;
   font-size: 2rem;
 }
+header nav ul li {
+  margin: 16px;
+}
 
 footer {
   height: 140px;
