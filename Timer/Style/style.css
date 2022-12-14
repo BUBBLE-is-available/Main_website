@@ -19,6 +19,15 @@ html {
 #timer-wrapper .timer-separator {
   font-size: 10rem;
 }
+#timer-wrapper button img {
+  width: 3rem;
+  height: 1.5rem;
+  position: relative;
+  top: 2px;
+}
+#timer-wrapper button img.down {
+  rotate: 180deg;
+}
 #timer-wrapper ul {
   list-style: none;
   display: flex;
@@ -36,6 +45,20 @@ html {
 }
 #timer-wrapper ul input:focus, #timer-wrapper ul button:focus {
   outline: none;
+}
+#timer-wrapper ul input:hover, #timer-wrapper ul button:hover {
+  cursor: pointer;
+}
+#timer-wrapper ul button {
+  background-color: hsl(0deg, 0%, 87.5%);
+  transition: all 0.25s;
+}
+#timer-wrapper ul button:hover {
+  background-color: hsl(0deg, 0%, 75%);
+}
+#timer-wrapper ul button:focus {
+  background-color: hsl(0deg, 0%, 66.6%);
+  border-color: hsl(0deg, 0%, 33.3%);
 }
 #timer-wrapper ul#timer input {
   font-size: inherit;
