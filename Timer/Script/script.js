@@ -1,3 +1,4 @@
+/*
 //#region Constants
 const NUMBER_OF_SECONDS_IN_A_MINUTE = 60;
 const NUMBER_OF_SECONDS_IN_A_HOUR = NUMBER_OF_SECONDS_IN_A_MINUTE * 60;
@@ -10,6 +11,7 @@ const INITIAL_TIME_IN_SECONDS = (HOURS_IN_INITIAL_TIME*NUMBER_OF_SECONDS_IN_A_HO
 
 //#region Selectors
 const timerElement = document.getElementById('timer');
+const textArea = document.querySelector('textarea');
 //#endregion
 
 //#region Functions
@@ -67,3 +69,11 @@ let remainingTimeInTimerInSeconds;
 
 startTimer();
 
+
+document.addEventListener("keydown", (event) => 
+{
+    if(inputElement != document.activeElement)
+        return;
+});
+
+*/

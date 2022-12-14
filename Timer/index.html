@@ -8,10 +8,38 @@
 
     <link rel="stylesheet" href="./Style/style.css">
     <script src="./Script/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/f92a5944b1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="wrapper">
-        <div id="timer">00:00:00</div>
+        <div id="timer-wrapper">
+            <ul class="timer-buttons">
+                <li><button></button></li>
+                <li class="button-before-separator"><button></button></li>
+                <li><button></button></li>
+                <li class="button-before-separator"><button></button></li>
+                <li><button></button></li>
+                <li><button></button></li>
+            </ul>
+            <ul id="timer">
+                <li><input type="text" class="hours second-digit" value="0" maxlength="1" size="1"></li>
+                <li><input type="text" class="hours firstDigit" value="0" maxlength="1" size="1"></li>
+                <li class="timer-separator">:</li>
+                <li><input type="text" class="minutes second-digit" value="0" maxlength="1" size="1"></li>
+                <li><input type="text" class="minutes firstDigit" value="0" maxlength="1" size="1"></li>
+                <li class="timer-separator">:</li>
+                <li><input type="text" class="seconds second-digit" value="0" maxlength="1" size="1"></li>
+                <li><input type="text" class="seconds firstDigit" value="0" maxlength="1" size="1"></li>
+            </ul>
+            <ul class="timer-buttons">
+                <li><button></button></li>
+                <li class="button-before-separator"><button></button></li>
+                <li><button></button></li>
+                <li class="button-before-separator"><button></button></li>
+                <li><button></button></li>
+                <li><button></button></li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
