@@ -63,12 +63,17 @@ function updateTimer() {
     const timeAtUpdateInMilliseconds = new Date().getTime();
     const MillisecondsThatHasPassedSinceTheStart = timeAtUpdateInMilliseconds - timeAtStartInMilliseconds;
     const updatedTimeInSeconds = parseInt((intialTimeInMilliseconds - MillisecondsThatHasPassedSinceTheStart) / 1000);
+    if(updatedTimeInSeconds <= 0)
+    {
+        updatedTimeInSeconds = 0;
+        stopTimer();
+    }
     timerDigits[5].value = updatedTimeInSeconds % 10;
     timerDigits[4].value = parseInt(updatedTimeInSeconds % 60 / 10);
     timerDigits[3].value = parseInt(updatedTimeInSeconds / 60 % 10);
     timerDigits[2].value = parseInt(updatedTimeInSeconds / 60 % 60 / 10); 
     timerDigits[1].value = parseInt(updatedTimeInSeconds / 3600 % 10);
-   timerDigits[0].value = parseInt(updatedTimeInSeconds / 3600 / 10);
+    timerDigits[0].value = parseInt(updatedTimeInSeconds / 3600 / 10);
 }
 
 function stopTimer() {

@@ -1,0 +1,63 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+#wrapper {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculation {
+    font-size: 8rem;
+
+    margin: 60px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #math-answer {
+        height: 12rem;
+        width: 24rem;
+
+        margin: 0 2.5rem;
+        border: none;
+        border-bottom: solid;
+        border-color: hsl(0, 0, 33.3%);
+
+        position: relative;
+        top: -4px;
+
+        text-align: center;
+        font-size: inherit;
+    
+        &:focus {
+            outline: none;
+        }
+
+        transition: background-color .5s ease-in-out;
+
+        &:hover {
+            background-color: hsl(0, 0, 87.5%);
+        }
+    }
+}
+
+button {
+    width: 200px;
+    height: 60px;
+
+    font-size: 4rem;
+}
+
