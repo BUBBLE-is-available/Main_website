@@ -7,5 +7,6 @@
 #blog-wrapper, #blog {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }/*# sourceMappingURL=style.css.map */
